@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';//Navegación
 import { createNativeStackNavigator } from '@react-navigation/native-stack';//Navegación
 import Inicio from './inicio';
@@ -19,6 +18,7 @@ export default class Navegacion extends Component {
     return (
         <NavigationContainer> 
       <Stack.Navigator>
+        
         <Stack.Screen name="Inicio" component={Inicio} options={{headerShown:false}} />
         <Stack.Screen name="Inscripcion" component={Inscripcion} options={{headerShown:false}} />
         <Stack.Screen name="Menu" component={Menu} options={{headerShown:false}}/>

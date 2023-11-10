@@ -69,7 +69,7 @@ export default class Tab1 extends Component {
 
                     <View style={styles.profileInMenu}>
                             <Text style={{ color: 'black', fontSize: 20 }}>
-                           {this.props.route.params.nombre}
+                            {this.props.route.params.name}
                             </Text>
                             <Image
                                 style={{ width: 30, height: 30 }}

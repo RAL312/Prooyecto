@@ -17,6 +17,7 @@ import {
   View,
 } from 'react-native';
 import Inicio from './Navegacion';
+
 import {
   Colors,
   DebugInstructions,
@@ -32,6 +33,7 @@ type SectionProps = PropsWithChildren<{
 function Section({children, title}: SectionProps): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
+
     <View style={styles.sectionContainer}>
       <Text
         style={[
@@ -63,7 +65,7 @@ function App(): JSX.Element {
   };
 
   return (
-   <Inicio/>
+    <Inicio/>
   );
 }
 

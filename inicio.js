@@ -103,7 +103,6 @@ export default class Inicio extends Component {
             borderRadius: 10,
           }}>
 
-
             <Text style={{
               fontSize: 18,
               marginLeft: 22,
@@ -117,8 +116,6 @@ export default class Inicio extends Component {
               height: 40,
               marginLeft: 20,
               backgroundColor: "white",
-
-
             }}
               onChangeText={correo => this.setState({ correo })}></TextInput>
 
@@ -157,6 +154,7 @@ export default class Inicio extends Component {
                 color: "white",
               }} >Aceptar</Text>
             </TouchableOpacity>
+  
           </View>
         </Modal>
       </View>

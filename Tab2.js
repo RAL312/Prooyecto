@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { WebView } from 'react-native-webview';
-import { View, Text, FlatList, StyleSheet } from 'react-native';
+import { View, Text, FlatList, StyleSheet, TouchableOpacity } from 'react-native';
 
 export default class Tab2 extends Component {
   constructor(props) {
@@ -13,9 +13,14 @@ export default class Tab2 extends Component {
       ],
     };
   }
-
+  openDrawer = () => {
+    this.drawer.openDrawer();
+  };
   render() {
+    
     return (
+   
+
       <View style={styles.background}>
         <View style={styles.box1}>
           <Text style = {styles.H1}>
@@ -33,6 +38,8 @@ export default class Tab2 extends Component {
           )}
         />
       </View>
+      
+      
     );
   }
 }
